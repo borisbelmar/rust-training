@@ -1,5 +1,5 @@
 [package]
-name = "hello-rust"
+name = "rust-training"
 version = "0.1.0"
 authors = ["Boris Belmar <borisbelmarm@gmail.com>"]
 edition = "2018"

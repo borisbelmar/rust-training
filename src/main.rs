@@ -1,12 +1,36 @@
 mod helloworld;
-mod operators;
+mod variables;
+mod types;
+mod arrays;
+mod functions;
+mod control;
+mod structs;
 
 fn main() {
   let name: &str = "Boris";
+
   helloworld::hello_world(name);
-  let sum: u16 = operators::sum(10, 10);
-  let sub: u16 = operators::sub(10, 5);
-  let mult: u16 = operators::mult(10, 5);
-  let div: f32 = operators::div(3, 6);
-  println!("The results are sum: {}, sub: {}, mult: {}, div: {}", sum, sub, mult, div);
+
+  variables::variables();
+
+  types::types();
+  types::conversion();
+
+  arrays::arrays();
+
+  functions::operations(5, 5);
+  functions::execute_switch(123, 321);
+
+  control::if_is_7(8);
+  control::exec_loop(30);
+  control::exec_while(20);
+  control::exec_for();
+  control::match_number(132);
+  control::exec_loop_return();
+  control::exec_block_expressions();
+
+  structs::get_length("Boris");
+  structs::get_seacreatures();
+  structs::print_location(50, 70);
+  structs::get_player_state();
 }
