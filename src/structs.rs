@@ -61,14 +61,14 @@ enum PlayerState {
   Idle
 }
 
-struct Player {
+struct MediaPlayer {
   media: String,
   duration: i32,
   state: PlayerState
 }
 
 pub fn get_player_state() {
-  let player = Player {
+  let player = MediaPlayer {
     media: String::from("El Principito"),
     duration: 8000,
     state: PlayerState::Playing
